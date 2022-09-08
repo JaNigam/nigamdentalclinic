@@ -36,21 +36,36 @@
             <a href="#about" class="p-2 md:hover:bg-green-700 md:rounded-lg">About</a>
             <a href="#services" class="p-2 md:hover:bg-green-700 md:rounded-lg">Services</a>
             <a href="#contact" class="p-2 md:hover:bg-green-700 md:rounded-lg">Contact</a>
+            <a href="#testimonials" class="p-2 md:hover:bg-green-700 md:rounded-lg">Testimonials</a>
         </div>
     </div>
 
-    <!-- hamburger menu -->
+    <!-- hamburger menu responsive -->
 
     <div class="text-white flex flex-row hidden bg-green-600 md:hidden ease-in duration-300" id="hamburgerMenu">
         <div></div>
         <div class="hamburger-links flex flex-col m-5 space-y-2">
-            <a onclick="toggleMenu()" href="#home">Home</a>
             <a onclick="toggleMenu()" href="#about">About us</a>
             <a onclick="toggleMenu()" href="#services">Services</a>
             <a onclick="toggleMenu()" href="#contact">Contact us</a>
-            <a onclick="toggleMenu()" href="#home">Testimonials</a>
+            <a onclick="toggleMenu()" href="#testimonials">Testimonials</a>
         </div>
     </div>
+
+    <div class="slider flex py-10 px-5 bg-gray-100 sm:p-20">
+
+        <div class="left m-3 ">
+            <div class="left-content  sm:space-y-2">
+                <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
+                <h1 class="text-3xl font-bold text-green-600">Dental Clinic</h1>
+                <p class="text-xl text-gray-400 my-3">We take your dental health seriously</p>
+                <button class="bg-green-600 hover:bg-green-700 rounded text-white px-4 py-2 mt-4"><a
+                        href="#contact">Book Appointment</a></button>
+
+            </div>
+        </div>
+    </div>
+
 
     <script>
         function toggleMenu() {
@@ -77,33 +92,23 @@
                 line3.classList.remove('-rotate-45');
                 line3.classList.remove('-translate-y-1.5');
                 line2.classList.remove('opacity-0');
-                
+
             }
-
-
         }
     </script>
-
-    <div class="slider flex py-10 px-5 bg-gray-100 sm:p-20">
-
-        <div class="left m-3 ">
-            <div class="left-content  sm:space-y-2">
-                <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
-                <h1 class="text-3xl font-bold text-green-600">Dental Clinic</h1>
-                <p class="text-xl text-gray-400 my-3">We take your dental health seriously</p>
-                <button class="bg-green-600 hover:bg-green-700 rounded text-white px-4 py-2 mt-4"><a
-                        href="#contact">Book Appointment</a></button>
-
-            </div>
-        </div>
-    </div>
-
-
     <!-- =========================================
     /* about us */
     ========================================= -->
     <div class="about-us flex flex-col items-center py-10 px-5 bg-green-600 sm:p-20" id="about">
         <h1 class="text-3xl font-bold text-white">About Us</h1>
+        <img src="./img/anant.jpg" alt="" class="h-60 rounded-full border-2 mt-10 mb-5">
+        <p class="text-xl text-white font-bold">Dr. Anant Gopal Nigam</p>
+        <div class="education flex flex-col text-white justify-end items-center text-sm">
+            <h2>(MDS)</h2>
+            <h3>Ex. Prof. & Head</h3>
+            <h3>Mahatma Gandhi Dental College, Jaipur</h3>
+        </div>
+
         <p class="text-base text-white my-3 px-5 text-justify sm:text-xl sm:mt-10 max-h-64 overflow-auto    ">Dr. Anant
             Gopal Nigam is one of the
             most popular dentists in the city, of Ajmer. Understanding that tooth-related issues can be scary for many,
@@ -131,12 +136,10 @@
     <!-- =========================================
     /* swiper card carousel */
     ========================================= -->
-
-    <div class="swiper mySwiper bg-gray-100">
+    <div class="swiper swiper-1 bg-gray-100">
         <div class="swiper-wrapper pb-20 ">
             <div class="swiper-slide  p-2 sm:px-10">
-                <div
-                    class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg border-2 border-green-600">
+                <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
                     <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/1A1A1A/external-implant-dental-kiranshastry-lineal-kiranshastry.png"
                         alt="">
                     <h1 class="text-xl font-bold mt-3 text-green-600">Dental Implants</h1>
@@ -161,8 +164,7 @@
             </div>
 
             <div class="swiper-slide p-2 sm:px-10">
-                <div
-                    class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg border-2 border-green-600">
+                <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
                     <img src="https://img.icons8.com/pastel-glyph/50/000000/crown--v2.png" alt="">
                     <h1 class="text-xl font-bold mt-3 text-green-600">Dental Crowns</h1>
                     <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem ipsum
@@ -180,8 +182,7 @@
             </div>
 
             <div class="swiper-slide p-2 sm:px-10">
-                <div
-                    class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg border-2 border-green-600">
+                <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
                     <img src="https://img.icons8.com/pastel-glyph/50/000000/crown--v2.png" alt="">
                     <h1 class="text-xl font-bold mt-3 text-green-600">Dental Crowns</h1>
                     <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem ipsum
@@ -248,7 +249,74 @@
     <!-- =========================================
     /* testimonials*/
     ========================================= -->
-    <div class="bg-while h-10"></div>
+    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
+        <h1 class="text-3xl font-bold text-green-600" id="testimonials">Testimonials</h1>
+    </div>
+
+    <!-- =========================================
+    /* testimonial cards*/
+    ========================================= -->
+    <div class="swiper swiper-1 bg-gray-100">
+        <div class="swiper-wrapper pb-20 ">
+
+            <!-- testimonial card -->
+            <div class="swiper-slide  p-2 sm:px-10">
+                <div class="testimonial-card flex flex-col items-center bg-green-600 p-5 shadow-xl rounded">
+                    <p class="text-base text-white my-3 px-5 text-justify max-h-60 overflow-auto style-2">
+                        <span class="text-xl font-bold ">"</span> One of the best Dental Clinics in Ajmer <span
+                            class="text-xl font-bold ">"</span>
+
+                    </p>
+                    <img src="https://img.icons8.com/fluency/48/000000/user-male.png" alt=""
+                        class="rounded-full border-white bg-white p-3">
+                    <h1 class="text-lg font-bold mt-3 text-white">~Rahul Singh</h1>
+                </div>
+            </div>
+
+            <!-- testimonial card -->
+            <div class="swiper-slide  p-2 sm:px-10">
+                <div class="testimonial-card flex flex-col items-center bg-green-600 p-5 shadow-xl rounded">
+                    <p class="text-base text-white my-3 px-5 text-justify max-h-60 overflow-auto style-2">
+                        <span class="text-xl font-bold ">"</span> Best treatment one can ever get!
+                        Long life to the teeth to keep all happy and healthy.
+                        Thanks sir! <span class="text-xl font-bold ">"</span>
+
+                    </p>
+                    <img src="https://img.icons8.com/fluency/48/000000/user-female.png" alt=""
+                        class="rounded-full border-white bg-white p-3">
+                    <h1 class="text-lg font-bold mt-3 text-white">~Sheelu Ramchandani</h1>
+                </div>
+            </div>
+
+            <div class="swiper-slide  p-2 sm:px-10">
+                <div class="testimonial-card flex flex-col items-center bg-green-600 p-5 shadow-xl rounded">
+                    <p class="text-base text-white my-3 px-5 text-justify max-h-60 overflow-auto style-2">
+                        <span class="text-xl font-bold ">"</span> Best doc for your kids <span
+                            class="text-xl font-bold ">"</span>
+
+                    </p>
+                    <img src="https://img.icons8.com/fluency/48/000000/user-male.png" alt=""
+                        class="rounded-full border-white bg-white p-3">
+                    <h1 class="text-lg font-bold mt-3 text-white">~Dr. Sudhir Maheshwari</h1>
+                </div>
+            </div>
+
+            <div class="swiper-slide  p-2 sm:px-10">
+                <div class="testimonial-card flex flex-col items-center bg-green-600 p-5 shadow-xl rounded">
+                    <p class="text-base text-white my-3 px-5 text-justify max-h-60 overflow-auto style-2">
+                        <span class="text-xl font-bold ">"</span> Nice, humble and very experienced doctor. <span
+                            class="text-xl font-bold ">"</span>
+
+                    </p>
+                    <img src="https://img.icons8.com/fluency/48/000000/user-male.png" alt=""
+                        class="rounded-full border-white bg-white p-3">
+                    <h1 class="text-lg font-bold mt-3 text-white">~Manish S</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination "></div>
+    </div>
 
 
     <!-- =========================================
@@ -281,55 +349,7 @@
     ========================================= -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- =========================================
-    /* swiper javascript */
-    ========================================= -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    // spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 1,
-                    // spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    // spaceBetween: 50,
-                },
-            },
-        });
-
-        function formTesting() {
-            if (document.getElementById('name').value == '') {
-                alert('Please enter your name');
-                return false;
-            }
-            if (document.getElementById('email').value == '') {
-                alert('Please enter your email');
-                return false;
-            }
-            if (document.getElementById('message').value == '') {
-                alert('Please enter your message');
-                return false;
-            }
-            else {
-                alert("Form Submitted Successfully");
-            }
-
-        }
-
-    </script>
-
+    <script type='module' src="./index.js"></script>
 
 </body>
 
