@@ -12,11 +12,15 @@
 
 
     <title>Nigam Dental Clinic|Home</title>
-  <script type="module" crossorigin src="/assets/index.3eec956c.js"></script>
-  <link rel="stylesheet" href="/assets/index.7c8eccac.css">
+  <script type="module" crossorigin src="/assets/index.83bfcc82.js"></script>
+  <link rel="stylesheet" href="/assets/index.33453848.css">
 </head>
 
 <body id="home">
+
+    <!-- =========================================
+    /* Navbar */
+    ========================================= -->
     <div class="navbar flex justify-between items-center p-4 bg-green-600">
 
         <div class="flex-col">
@@ -42,8 +46,11 @@
         </div>
     </div>
 
-    <!-- hamburger menu responsive -->
 
+
+    <!-- =========================================
+    /* Hamburger menu responsive */
+    ========================================= -->
     <div class="text-white flex flex-row hidden bg-green-600 md:hidden ease-in duration-300" id="hamburgerMenu">
         <div></div>
         <div class="hamburger-links flex flex-col m-5 space-y-2">
@@ -54,21 +61,9 @@
         </div>
     </div>
 
-    <div class="slider flex py-10 px-5 bg-gray-100 sm:p-20">
-
-        <div class="left m-3 ">
-            <div class="left-content  sm:space-y-2">
-                <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
-                <h1 class="text-3xl font-bold text-green-600">Dental Clinic</h1>
-                <p class="text-xl text-gray-400 my-3">We take your dental health seriously</p>
-                <button class="bg-green-600 hover:bg-green-700 rounded text-white px-4 py-2 mt-4"><a
-                        href="#contact">Book Appointment</a></button>
-
-            </div>
-        </div>
-    </div>
-
-
+    <!-- =========================================
+    /* js for responsive hamburger */
+    ========================================= -->
     <script>
         function toggleMenu() {
             var menu = document.getElementById("hamburgerMenu");
@@ -98,34 +93,87 @@
             }
         }
     </script>
+
+
+    <div class="flex flex-col md:flex-row items-center py-10 px-5 bg-gray-100 sm:p-20">
+
+        <div class="left m-3 sm:space-y-2 w-full ">
+            <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
+            <h1 class="text-3xl font-bold text-green-600">Dental Clinic</h1>
+            <p class="text-xl text-gray-400 my-3">We take your dental health seriously</p>
+            <button class="bg-green-600 hover:bg-green-700 rounded text-white px-4 py-2 mt-4"><a href="#contact">Book
+                    Appointment</a></button>
+        </div>
+
+        <div class="swiper mySwiper mt-5 w-full rounded-lg drop-shadow-2xl">
+            <div class="swiper-wrapper brightness-75">
+                <div class="swiper-slide"><img class="object-cover" src="/assets/4.9bf11807.jpeg"></div>
+                <div class="swiper-slide"><img class="" src="/assets/3.da6c1f01.jpeg"></div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+
+
+
     <!-- =========================================
     /* about us */
     ========================================= -->
-    <div class="about-us flex flex-col items-center py-10 px-5 bg-green-600 sm:p-20" id="about">
-        <h1 class="text-3xl font-bold text-white">About Us</h1>
-        <img src="/assets/anant.6972ee8b.jpg" alt="" class="h-60 rounded-full border-2 mt-10 mb-5">
-        <p class="text-xl text-white font-bold">Dr. Anant Gopal Nigam</p>
-        <div class="education flex flex-col text-white justify-end items-center text-sm">
-            <h2>(MDS)</h2>
-            <h3>Ex. Prof. & Head</h3>
-            <h3>Mahatma Gandhi Dental College, Jaipur</h3>
+    <div class="aboutus bg-green-600 py-10">
+        <div class="heading text-center text-3xl text-white font-bold">About Us</div>
+        <div class="about-content flex flex-col md:flex-row items-center">
+            <div class="image w-full flex flex-col items-center">
+                <div class="img">
+                    <img src="/assets/anant.6972ee8b.jpg" alt="" class="h-60 rounded-full border-2 mt-10 mb-5">
+                </div>
+                <div class="education text-center text-white font-bold">
+                    <h2>(MDS)</h2>
+                    <h3>Ex. Prof. & Head</h3>
+                    <h3>Mahatma Gandhi Dental College, Jaipur</h3>
+                </div>
+            </div>
+
+            <div class="content w-full p-3">
+                <p
+                    class="text-base text-white my-3 px-5 text-justify sm:text-xl sm:mt-10 max-h-64 md:max-h-96 overflow-auto style-3">
+                    Dr.
+                    Anant
+                    Gopal Nigam is one of the
+                    most popular dentists in the city, of Ajmer. Understanding that tooth-related issues can be
+                    scary
+                    for
+                    many,
+                    we have a very calm approach when treating patients which helps keep them calm. The dental
+                    facility
+                    stands
+                    located near Mayoor School which makes it hassle-free for people from near and far alike to
+                    visit
+                    and
+                    consult us.<br>
+                    Dr. Nigam Dental Medical Clinic in Ajmer holds immense popularity in the city for being a dental
+                    facility
+                    equipped with advanced dental equipment for better treatment of patients. Right from regular
+                    dental
+                    check-ups and cleaning to more serious dental procedures, we ensure every single issue is
+                    tackled
+                    with
+                    care
+                    and in a way that the patient feels at ease. A waiting area and a dedicated consultation area
+                    ensure
+                    the
+                    patients feel at ease. Apart from the tooth and gum issues, the suggestions given by us for
+                    maintaining
+                    proper dental health prove to be quite effective. Post-treatment care and prevention are given
+                    equal
+                    importance as that given to the procedures.</p>
+            </div>
         </div>
 
-        <p class="text-base text-white my-3 px-5 text-justify sm:text-xl sm:mt-10 max-h-64 overflow-auto    ">Dr. Anant
-            Gopal Nigam is one of the
-            most popular dentists in the city, of Ajmer. Understanding that tooth-related issues can be scary for many,
-            we have a very calm approach when treating patients which helps keep them calm. The dental facility stands
-            located near Mayoor School which makes it hassle-free for people from near and far alike to visit and
-            consult us.<br>
-            Dr. Nigam Dental Medical Clinic in Ajmer holds immense popularity in the city for being a dental facility
-            equipped with advanced dental equipment for better treatment of patients. Right from regular dental
-            check-ups and cleaning to more serious dental procedures, we ensure every single issue is tackled with care
-            and in a way that the patient feels at ease. A waiting area and a dedicated consultation area ensure the
-            patients feel at ease. Apart from the tooth and gum issues, the suggestions given by us for maintaining
-            proper dental health prove to be quite effective. Post-treatment care and prevention are given equal
-            importance as that given to the procedures.</p>
-
     </div>
+
 
     <!-- =========================================
     /* our services*/
@@ -133,7 +181,6 @@
     <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
         <h1 class="text-3xl font-bold text-green-600" id="services">Our Services</h1>
     </div>
-
 
     <!-- =========================================
     /* swiper card carousel */
@@ -148,16 +195,19 @@
                     <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Loss
                         of tooth in an
                         individual is a very
-                        unfortunate incident irrespective of age as the patient not only is unable to eat comfortably as
+                        unfortunate incident irrespective of age as the patient not only is unable to eat
+                        comfortably as
                         he was eating previously but it is a great psychological impact as well. <br>Replacement of
                         teeth
                         has been done since ages and the various ways of replaceing the teeth included removable
                         partial/ complete dentures followed by fixed partial dentures followed by conventional
                         implants.<br>Implants till now generally has been used as conventional implants in which the
                         elaborate surgical procedure and waiting time of 3-4 months was required and then the final
-                        prosthesis was given.<br>Now with the advent of basal imlants this extreme surgical requirement
+                        prosthesis was given.<br>Now with the advent of basal imlants this extreme surgical
+                        requirement
                         and
-                        the waiting period of 3 to 4 months is reduced to three days and the subsequent final results
+                        the waiting period of 3 to 4 months is reduced to three days and the subsequent final
+                        results
                         are even more better as compared to conventional implants.
 
                     </p>
@@ -169,16 +219,20 @@
                 <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
                     <img src="https://img.icons8.com/pastel-glyph/50/000000/crown--v2.png" alt="">
                     <h1 class="text-xl font-bold mt-3 text-green-600">Dental Crowns</h1>
-                    <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem ipsum
+                    <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem
+                        ipsum
                         dolor
                         sit amet consectetur
                         adipisicing elit.
                         Odit quibusdam
-                        ipsa non repellat repudiandae ullam ipsam culpa? Accusantium, modi. Accusamus at, velit nihil
+                        ipsa non repellat repudiandae ullam ipsam culpa? Accusantium, modi. Accusamus at, velit
+                        nihil
                         iusto
-                        voluptatem, iste excepturi, voluptatum labore deleniti laborum tempore nemo a hic! Dolorem rerum
+                        voluptatem, iste excepturi, voluptatum labore deleniti laborum tempore nemo a hic! Dolorem
+                        rerum
                         repellat
-                        illo provident temporibus quod maxime necessitatibus quisquam non ex, repudiandae nesciunt quis!
+                        illo provident temporibus quod maxime necessitatibus quisquam non ex, repudiandae nesciunt
+                        quis!
                     </p>
                 </div>
             </div>
@@ -187,16 +241,20 @@
                 <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
                     <img src="https://img.icons8.com/pastel-glyph/50/000000/crown--v2.png" alt="">
                     <h1 class="text-xl font-bold mt-3 text-green-600">Dental Crowns</h1>
-                    <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem ipsum
+                    <p class="text-base text-gray-400 my-3 px-5 text-justify max-h-60 overflow-auto style-2">Lorem
+                        ipsum
                         dolor
                         sit amet consectetur
                         adipisicing elit.
                         Odit quibusdam
-                        ipsa non repellat repudiandae ullam ipsam culpa? Accusantium, modi. Accusamus at, velit nihil
+                        ipsa non repellat repudiandae ullam ipsam culpa? Accusantium, modi. Accusamus at, velit
+                        nihil
                         iusto
-                        voluptatem, iste excepturi, voluptatum labore deleniti laborum tempore nemo a hic! Dolorem rerum
+                        voluptatem, iste excepturi, voluptatum labore deleniti laborum tempore nemo a hic! Dolorem
+                        rerum
                         repellat
-                        illo provident temporibus quod maxime necessitatibus quisquam non ex, repudiandae nesciunt quis!
+                        illo provident temporibus quod maxime necessitatibus quisquam non ex, repudiandae nesciunt
+                        quis!
                     </p>
                 </div>
             </div>
@@ -258,7 +316,7 @@
     <!-- =========================================
     /* testimonial cards*/
     ========================================= -->
-    <div class="swiper swiper-1 bg-gray-100">
+    <div class="swiper swiper-2 bg-gray-100">
         <div class="swiper-wrapper pb-20 ">
 
             <!-- testimonial card -->
