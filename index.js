@@ -94,6 +94,14 @@ function formTesting() {
         alert('Please enter your message');
         return false;
     }
+    if (document.getElementById('phone').value == '') {
+        alert('Please enter your message');
+        return false;
+    }
+    if(document.getElementById('phone').value.length < 10){
+        alert('Please enter a valid phone number');
+        return false;
+    }
     else {
         alert("Form Submitted Successfully");
     }

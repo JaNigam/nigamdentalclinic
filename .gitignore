@@ -1,0 +1,8 @@
+#ignore img directory
+node_modules/*
+
+#ignore all files in img directory
+img/*
+
+#ignore distribution forlder
+dist/*

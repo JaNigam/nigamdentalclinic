@@ -13,7 +13,7 @@
 
     <title>Nigam Dental Clinic|Home</title>
   <script type="module" crossorigin src="/assets/index.83bfcc82.js"></script>
-  <link rel="stylesheet" href="/assets/index.33453848.css">
+  <link rel="stylesheet" href="/assets/index.85d3f548.css">
 </head>
 
 <body id="home">
@@ -43,6 +43,8 @@
             <a href="#services" class="p-2 md:hover:bg-green-700 md:rounded-lg">Services</a>
             <a href="#contact" class="p-2 md:hover:bg-green-700 md:rounded-lg">Contact</a>
             <a href="#testimonials" class="p-2 md:hover:bg-green-700 md:rounded-lg">Testimonials</a>
+            <a href="https://g.page/r/CS4mwChHkpfLEAg/review" class="p-2 md:hover:bg-green-700 md:rounded-lg">Review
+                us</a>
         </div>
     </div>
 
@@ -54,10 +56,12 @@
     <div class="text-white flex flex-row hidden bg-green-600 md:hidden ease-in duration-300" id="hamburgerMenu">
         <div></div>
         <div class="hamburger-links flex flex-col m-5 space-y-2">
-            <a onclick="toggleMenu()" href="#about">About us</a>
+            <a onclick="toggleMenu()" href="#about">About</a>
             <a onclick="toggleMenu()" href="#services">Services</a>
-            <a onclick="toggleMenu()" href="#contact">Contact us</a>
+            <a onclick="toggleMenu()" href="#contact">Contact</a>
             <a onclick="toggleMenu()" href="#testimonials">Testimonials</a>
+            <a onclick="toggleMenu()" href="https://g.page/r/CS4mwChHkpfLEAg/review">Review us</a>
+
         </div>
     </div>
 
@@ -95,7 +99,7 @@
     </script>
 
 
-    <div class="flex flex-col md:flex-row items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="flex flex-col md:flex-row items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
 
         <div class="left m-3 sm:space-y-2 w-full ">
             <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
@@ -107,16 +111,17 @@
 
         <div class="swiper mySwiper mt-5 w-full rounded-lg drop-shadow-2xl">
             <div class="swiper-wrapper brightness-75">
-                <div class="swiper-slide"><img class="object-cover" src="/assets/4.9bf11807.jpeg"></div>
                 <div class="swiper-slide"><img class="" src="/assets/3.da6c1f01.jpeg"></div>
-                
+                <div class="swiper-slide"><img class="" src="/assets/8.53c876e4.jpg"></div>
+                <div class="swiper-slide"><img class="" src="/assets/9.c12017ec.jpg"></div>
+                <div class="swiper-slide"><img class="" src="/assets/10.52100d3f.jpg"></div>
+                <div class="swiper-slide"><img class="" src="/assets/11.325e4c76.jpg"></div>
+
             </div>
             <div class="swiper-pagination"></div>
         </div>
 
     </div>
-
-
 
 
     <!-- =========================================
@@ -178,14 +183,14 @@
     <!-- =========================================
     /* our services*/
     ========================================= -->
-    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
         <h1 class="text-3xl font-bold text-green-600" id="services">Our Services</h1>
     </div>
 
     <!-- =========================================
     /* swiper card carousel */
     ========================================= -->
-    <div class="swiper swiper-1 bg-gray-100">
+    <div class="swiper swiper-1 bg-gray-100" id="svgBg">
         <div class="swiper-wrapper pb-20 ">
             <div class="swiper-slide  p-2 sm:px-10">
                 <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
@@ -289,10 +294,14 @@
                 <input type="text" placeholder="Name" name="name"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
                     id="name">
-                <!-- <input type="hidden" name="_subject" value="New Inquiry"> -->
                 <input type="email" name='email' placeholder="Email"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
                     id="email">
+
+                <!-- <input type="phone" name='phone' placeholder="Phone No +91-"
+                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
+                    id="phone"> -->
+
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"></textarea>
                 <div>
@@ -309,14 +318,14 @@
     <!-- =========================================
     /* testimonials*/
     ========================================= -->
-    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
         <h1 class="text-3xl font-bold text-green-600" id="testimonials">Testimonials</h1>
     </div>
 
     <!-- =========================================
     /* testimonial cards*/
     ========================================= -->
-    <div class="swiper swiper-2 bg-gray-100">
+    <div class="swiper swiper-2 bg-gray-100" id="svgBg">
         <div class="swiper-wrapper pb-20 ">
 
             <!-- testimonial card -->

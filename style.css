@@ -71,3 +71,10 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgb(24, 162, 74);
 }
+
+#svgBg {
+  background-color: #F9F9F9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%2316A34A' stroke-width='24.4' stroke-opacity='0.12' %3E%3Ccircle fill='%23F9F9F9' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23F9F9F9' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}

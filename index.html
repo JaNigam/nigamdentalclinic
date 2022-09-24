@@ -10,6 +10,33 @@
     <!-- swiperjs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+
+            emailjs.init('JNwVFlDUu131C7qk2');
+        })();
+    </script>
+
+
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_us_form', this)
+                    .then(function () {
+                        window.alert("Your message has been sent successfully!");
+                        location.reload();
+                    }, function (error) {
+                        window.alert("something went wrong!");
+                    });
+            });
+        }
+    </script>
 
     <title>Nigam Dental Clinic|Home</title>
 </head>
@@ -41,6 +68,8 @@
             <a href="#services" class="p-2 md:hover:bg-green-700 md:rounded-lg">Services</a>
             <a href="#contact" class="p-2 md:hover:bg-green-700 md:rounded-lg">Contact</a>
             <a href="#testimonials" class="p-2 md:hover:bg-green-700 md:rounded-lg">Testimonials</a>
+            <a href="https://g.page/r/CS4mwChHkpfLEAg/review" class="p-2 md:hover:bg-green-700 md:rounded-lg">Review
+                us</a>
         </div>
     </div>
 
@@ -52,10 +81,12 @@
     <div class="text-white flex flex-row hidden bg-green-600 md:hidden ease-in duration-300" id="hamburgerMenu">
         <div></div>
         <div class="hamburger-links flex flex-col m-5 space-y-2">
-            <a onclick="toggleMenu()" href="#about">About us</a>
+            <a onclick="toggleMenu()" href="#about">About</a>
             <a onclick="toggleMenu()" href="#services">Services</a>
-            <a onclick="toggleMenu()" href="#contact">Contact us</a>
+            <a onclick="toggleMenu()" href="#contact">Contact</a>
             <a onclick="toggleMenu()" href="#testimonials">Testimonials</a>
+            <a onclick="toggleMenu()" href="https://g.page/r/CS4mwChHkpfLEAg/review">Review us</a>
+
         </div>
     </div>
 
@@ -93,7 +124,7 @@
     </script>
 
 
-    <div class="flex flex-col md:flex-row items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="flex flex-col md:flex-row items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
 
         <div class="left m-3 sm:space-y-2 w-full ">
             <h1 class="text-3xl font-bold text-green-600">Nigam</h1>
@@ -105,16 +136,17 @@
 
         <div class="swiper mySwiper mt-5 w-full rounded-lg drop-shadow-2xl">
             <div class="swiper-wrapper brightness-75">
-                <div class="swiper-slide"><img class="object-cover" src="./img/4.jpeg"></div>
                 <div class="swiper-slide"><img class="" src="./img/3.jpeg"></div>
-                
+                <div class="swiper-slide"><img class="" src="./img/8.jpg"></div>
+                <div class="swiper-slide"><img class="" src="./img/9.jpg"></div>
+                <div class="swiper-slide"><img class="" src="./img/10.jpg"></div>
+                <div class="swiper-slide"><img class="" src="./img/11.jpg"></div>
+
             </div>
             <div class="swiper-pagination"></div>
         </div>
 
     </div>
-
-
 
 
     <!-- =========================================
@@ -176,14 +208,14 @@
     <!-- =========================================
     /* our services*/
     ========================================= -->
-    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
         <h1 class="text-3xl font-bold text-green-600" id="services">Our Services</h1>
     </div>
 
     <!-- =========================================
     /* swiper card carousel */
     ========================================= -->
-    <div class="swiper swiper-1 bg-gray-100">
+    <div class="swiper swiper-1 bg-gray-100" id="svgBg">
         <div class="swiper-wrapper pb-20 ">
             <div class="swiper-slide  p-2 sm:px-10">
                 <div class="service-card flex flex-col items-center bg-white p-5 rounded-lg shadow-lg ">
@@ -282,23 +314,25 @@
         <!-- form -->
         <div class="contact-form bg-gray-100 w-full ">
 
-            <form action="https://formsubmit.io/send/e66596db-8599-4af2-83cb-9f34bc6a55fd
-            " method='POST' onsubmit="formTesting()" class="flex flex-col space-y-3 p-10">
-                <input type="text" placeholder="Name" name="name"
+            <form method='POST' onsubmit=" formTesting()" class="flex flex-col space-y-3 p-10" id="contact-form">
+                <input type="text" placeholder="Name" name="user_name"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
                     id="name">
-                <!-- <input type="hidden" name="_subject" value="New Inquiry"> -->
-                <input type="email" name='email' placeholder="Email"
+                <input type="email" name='user_email' placeholder="Email"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
                     id="email">
+
+                <input type="phone" name='user_phone' placeholder="Phone No +91-"
+                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"
+                    id="phone" required>
+
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
                     class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-600"></textarea>
-                <div>
-                    <button class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700">Submit</button>
-                </div>
-                <!-- <input type="hidden" name="_captcha" value="false"> -->
-                <input name="_formsubmit_id" type="text" style="display:none">
-                <input name="_redirect" type="hidden" id="name" value="https://nigamdentalclinicaj.web.app/">
+
+
+                <button class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700" type="submit">Submit</button>
+
+
             </form>
 
         </div>
@@ -307,14 +341,14 @@
     <!-- =========================================
     /* testimonials*/
     ========================================= -->
-    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20">
+    <div class="services flex flex-col items-center py-10 px-5 bg-gray-100 sm:p-20" id="svgBg">
         <h1 class="text-3xl font-bold text-green-600" id="testimonials">Testimonials</h1>
     </div>
 
     <!-- =========================================
     /* testimonial cards*/
     ========================================= -->
-    <div class="swiper swiper-2 bg-gray-100">
+    <div class="swiper swiper-2 bg-gray-100" id="svgBg">
         <div class="swiper-wrapper pb-20 ">
 
             <!-- testimonial card -->
